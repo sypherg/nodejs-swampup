@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-swampup",
+  "version": "0.0.17",
+  "description": "Node.js Sample Application",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4"
+  },
+  "engine": {
+    "node": "*",
+    "npm": "*"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/ankushchadha/nodejs-swampup.git"
+  },
+  "author": "Ankush Chadha <ankushc@jfrog.com>",
+  "license": "",
+  "bugs": {
+    "url": "http://github.com/ankushchadha/nodejs-swampup/issues"
+  },
+  "homepage": "http://github.com/ankushchadha/nodejs-swampup"
+}
