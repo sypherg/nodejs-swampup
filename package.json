@@ -1,6 +1,7 @@
 {
   "name": "nodejs-swampup",
-  "version": "0.0.17",
+  "publishConfig":{"registry":"http://35.184.228.147/artifactory/api/npm/npm/"},
+  "version": "0.0.18",
   "description": "Node.js Sample Application",
   "main": "server.js",
   "dependencies": {
