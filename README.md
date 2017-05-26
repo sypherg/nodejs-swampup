@@ -1,5 +1,5 @@
 nodejs sample application
 --------
 
-### Demo created for SwampUp 2017
+### Demo created for Solution Engineering team
 

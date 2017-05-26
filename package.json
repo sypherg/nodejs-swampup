@@ -19,12 +19,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/ankushchadha/nodejs-swampup.git"
+    "url": "http://github.com/narasimhapai/nodejs-swampup.git"
   },
-  "author": "Ankush Chadha <ankushc@jfrog.com>",
+  "author": "Narasimha Pai <narasimhap@jfrog.com>",
   "license": "",
   "bugs": {
     "url": "http://github.com/ankushchadha/nodejs-swampup/issues"
   },
-  "homepage": "http://github.com/ankushchadha/nodejs-swampup"
+  "homepage": "http://github.com/narasimhapai/nodejs-swampup"
 }

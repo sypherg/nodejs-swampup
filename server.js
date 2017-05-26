@@ -6,8 +6,8 @@ var express = require('express'),
 app.engine('html', require('ejs').renderFile);
 app.use(express.static('public'))
 
-var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 3001,
-    ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
+var port = 3001,
+    ip   = '0.0.0.0',
     health_status=true;
 
 
