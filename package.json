@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "http://104.155.134.243/artifactory/api/npm/npm/"
   },
-  "version": "0.4.8",
+  "version": "0.4.9",
   "description": "Node.js Sample Application",
   "main": "server.js",
   "dependencies": {
