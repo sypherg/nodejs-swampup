@@ -11,7 +11,7 @@ node {
         echo 'stage'
         sh 'npm config set registry http://35.188.216.43/artifactory/api/npm/npm-local/'
         sh 'npm config set @npm-local:registry http://35.188.216.43/artifactory/api/npm/npm-local/'
-        sh 'npm publish --registry http://35.188.216.43/artifactory/api/npm/npm/'
+        sh 'npm publish --registry http://35.188.216.43/artifactory/api/npm/npm-local/'
         println NPMRC_REF
         withNPM(npmrcConfig: NPMRC_REF) {
             echo "Performing npm build..."
