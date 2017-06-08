@@ -1,7 +1,7 @@
 {
   "name": "nodejs-swampup",
   "publishConfig": {
-    "registry": "http://104.155.134.243/artifactory/api/npm/npm/"
+    "registry": "http://jfrog.local/artifactory/api/npm/npm-local/"
   },
   "version": "0.4.9",
   "description": "Node.js Sample Application",
