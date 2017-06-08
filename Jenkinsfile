@@ -1,4 +1,6 @@
 node {
+    println ART_URL
+    println CREDENTIALS
     def rtServer = Artifactory.newServer url: ART_URL, credentialsId: CREDENTIALS
     def buildInfo = Artifactory.newBuildInfo()
     buildInfo.env.capture = true
@@ -10,7 +12,8 @@ node {
         sh 'npm config set registry http://35.188.216.43/artifactory/api/npm/npm-local/'
         sh 'npm config set @npm-local:registry http://35.188.216.43/artifactory/api/npm/npm-local/'
         sh 'npm publish --registry http://35.188.216.43/artifactory/api/npm/npm/'
-        withNPM(npmrcConfig:'9d2604b5-413a-4ddf-b9e5-ff9aa76916ab') {
+        println NPMRC_REF
+        withNPM(npmrcConfig: NPMRC_REF) {
             echo "Performing npm build..."
             sh 'npm install'
         }
