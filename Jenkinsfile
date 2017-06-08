@@ -9,6 +9,7 @@ node {
         git url: 'https://github.com/williammanning/nodejs-swampup.git'
    stage('npm-build') {
         echo 'stage'
+        sh 'npm whoami'
         sh 'npm config set registry http://35.188.216.43/artifactory/api/npm/npm-local/'
         sh 'npm config set @npm-local:registry http://35.188.216.43/artifactory/api/npm/npm-local/'
         sh 'npm publish --registry http://35.188.216.43/artifactory/api/npm/npm/'
