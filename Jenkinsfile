@@ -13,7 +13,7 @@ node {
         sh 'npm config set @npm-local:registry http://jfrog.local/artifactory/api/npm/npm-local/'
         sh 'npm publish --registry http://jfrog.local/artifactory/api/npm/npm-local/'
         println NPMRC_REF
-        withNPM(npmrcConfig: NPMRC_REF) {
+        withNPM(npmrcConfig: '9d2604b5-413a-4ddf-b9e5-ff9aa76916ab') {
             echo "Performing npm build..."
             sh 'npm install'
         }
