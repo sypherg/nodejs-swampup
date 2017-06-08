@@ -11,7 +11,7 @@ node {
         echo 'stage'
         sh 'npm config set registry http://jfrog.local/artifactory/api/npm/npm-local/'
         sh 'npm config set @npm-local:registry http://jfrog.local/artifactory/api/npm/npm-local/'
-        //sh 'npm publish --registry http://jfrog.local/artifactory/api/npm/npm-local/'
+        sh 'npm publish --registry http://jfrog.local/artifactory/api/npm/npm-local/'
         println NPMRC_REF
         withNPM(npmrcConfig: NPMRC_REF) {
             echo "Performing npm build..."
