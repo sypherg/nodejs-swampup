@@ -27,10 +27,10 @@ node {
                           }
                           ]
                         }"""
-        println "what????"
-        rtServer.upload(uploadSpec, buildInfo)
-        println buildInfo
-        println "hey"
-        rtServer.publishBuildInfo(buildInfo)
+        // println "what????"
+        // rtServer.upload(uploadSpec, buildInfo)
+        // println buildInfo
+        // println "hey"
+        // rtServer.publishBuildInfo(buildInfo)
    }
 }
