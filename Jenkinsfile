@@ -4,9 +4,10 @@ node {
     def rtServer = Artifactory.newServer url: ART_URL, credentialsId: CREDENTIALS
     def buildInfo = Artifactory.newBuildInfo()
     buildInfo.env.capture = true
-   echo 'npm test'
+    println rtServer
+    echo 'npm test'
    stage 'Build'
-        git url: 'https://github.com/williammanning/nodejs-swampup.git'
+     git url: 'https://github.com/williammanning/nodejs-swampup.git'
    stage 'npm config'
      sh 'npm config set registry ${ART_URL}/api/npm/npm-local/'
      sh 'npm config set @npm-local:registry ${ART_URL}/api/npm/npm-local/'
@@ -18,7 +19,6 @@ node {
             echo "Performing npm build..."
             sh 'npm install'
         }
-
         def uploadSpec = """{
                          "files": [
                           {
