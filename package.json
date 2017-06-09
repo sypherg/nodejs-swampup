@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/narasimhapai/nodejs-swampup.git"
+    "url": "http://github.com/narasimhapai/nodejs-swampup.git"  
   },
   "author": "Narasimha Pai <narasimhap@jfrog.com>",
   "license": "",
