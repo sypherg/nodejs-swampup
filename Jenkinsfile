@@ -10,8 +10,7 @@ node {
                       {
                        "pattern": "package.json",
                        "target": "npm-local",
-                       "flat":"true",
-                       "test":"test"
+                       "flat":"true"
                       }
                       ]
                     }"""
