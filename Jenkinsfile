@@ -5,6 +5,17 @@ node {
     def buildInfo = Artifactory.newBuildInfo()
     buildInfo.env.capture = true
     println rtServer
+    def uploadSpec = """{
+                     "files": [
+                      {
+                       "pattern": "package.json",
+                       "target": "npm-local",
+                       "flat":"true",
+                       "test":"test"
+                      }
+                      ]
+                    }"""
+    println uploadSpec
     echo 'npm test'
    stage 'Build'
      git url: 'https://github.com/williammanning/nodejs-swampup.git'
@@ -19,17 +30,6 @@ node {
             echo "Performing npm build..."
             sh 'npm install'
         }
-        def uploadSpec = """{
-                         "files": [
-                          {
-                           "pattern": "package.json",
-                           "target": "npm-local",
-                           "flat":"true",
-                           "test":"test"
-                          }
-                          ]
-                        }"""
-        println uploadSpec
         rtServer.upload(uploadSpec, buildInfo)
         println buildInfo
         println "hey"
