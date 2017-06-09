@@ -13,7 +13,7 @@ node {
         sh 'npm config set @npm-local:registry ${ART_URL}/api/npm/npm-local/'
         sh 'npm publish --registry ${ART_URL}/api/npm/npm-local/'
         println NPMRC_REF
-        withNPM(npmrcConfig: NPMRC_REF) {
+        withNPM(npmrcConfig: '${NPMRC_REF}') {
             echo "Performing npm build..."
             sh 'npm install'
         }
@@ -27,10 +27,10 @@ node {
                           }
                           ]
                         }"""
-        // println "what????"
-        // rtServer.upload(uploadSpec, buildInfo)
-        // println buildInfo
-        // println "hey"
-        // rtServer.publishBuildInfo(buildInfo)
+        println "what????"
+        rtServer.upload(uploadSpec, buildInfo)
+        println buildInfo
+        println "hey"
+        rtServer.publishBuildInfo(buildInfo)
    }
 }
