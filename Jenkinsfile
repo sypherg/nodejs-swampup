@@ -7,11 +7,11 @@ node {
     println rtServer
     def uploadSpec = """{
                      "files": [
-                      {
-                       "pattern": "package.json",
-                       "target": "npm-local",
-                       "flat":"true"
-                      }
+                        {
+                         "pattern": "package.json",
+                         "target": "npm-local",
+                         "flat":"true"
+                        }
                       ]
                     }"""
     println uploadSpec
