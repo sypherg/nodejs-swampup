@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "http://35.188.216.43:80/artifactory/api/npm/npm-local/"
   },
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "Node.js Sample Application",
   "main": "server.js",
   "dependencies": {
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/narasimhapai/nodejs-swampup.git"  
+    "url": "http://github.com/narasimhapai/nodejs-swampup.git"
   },
   "author": "Narasimha Pai <narasimhap@jfrog.com>",
   "license": "",
