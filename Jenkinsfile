@@ -27,8 +27,8 @@ node {
                           }
                           ]
                         }"""
+        println "what????"
         rtServer.upload(uploadSpec, buildInfo)
-        println "what"
         println buildInfo
         println "hey"
         rtServer.publishBuildInfo(buildInfo)
