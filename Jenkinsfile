@@ -7,11 +7,12 @@ node {
    echo 'npm test'
    stage 'Build'
         git url: 'https://github.com/williammanning/nodejs-swampup.git'
+   stage 'npm config'
+     sh 'npm config set registry ${ART_URL}/api/npm/npm-local/'
+     sh 'npm config set @npm-local:registry ${ART_URL}/api/npm/npm-local/'
+     sh 'npm publish --registry ${ART_URL}/api/npm/npm-local/'
    stage('npm-build') {
         echo 'stage'
-        sh 'npm config set registry ${ART_URL}/api/npm/npm-local/'
-        sh 'npm config set @npm-local:registry ${ART_URL}/api/npm/npm-local/'
-        sh 'npm publish --registry ${ART_URL}/api/npm/npm-local/'
         withNPM(npmrcConfig: NPMRC_REF) {
             println NPMRC_REF
             echo "Performing npm build..."
@@ -23,7 +24,8 @@ node {
                           {
                            "pattern": "package.json",
                            "target": "npm-local",
-                           "flat":"true"
+                           "flat":"true",
+                           "test":"test"
                           }
                           ]
                         }"""
