@@ -28,7 +28,7 @@ node {
         withNPM(npmrcConfig: NPMRC_REF) {
             println NPMRC_REF
             echo "Performing npm build..."
-            sh 'npm install'
+            //sh 'npm install'
         }
         rtServer.upload(uploadSpec, buildInfo)
         println buildInfo
