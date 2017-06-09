@@ -12,8 +12,8 @@ node {
         sh 'npm config set registry ${ART_URL}/api/npm/npm-local/'
         sh 'npm config set @npm-local:registry ${ART_URL}/api/npm/npm-local/'
         sh 'npm publish --registry ${ART_URL}/api/npm/npm-local/'
-        println NPMRC_REF
-        withNPM(npmrcConfig: '${NPMRC_REF}') {
+        withNPM(npmrcConfig: NPMRC_REF) {
+            println NPMRC_REF
             echo "Performing npm build..."
             sh 'npm install'
         }
