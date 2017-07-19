@@ -1,7 +1,7 @@
 {
   "name": "nodejs-swampup",
   "publishConfig": {
-    "registry": "http://146.148.46.222/artifactory/api/npm/npm-mcafee-local/"
+    "registry": "http://146.148.46.222/artifactory/api/npm/npm-mcafee-virtual/"
   },
   "version": "0.5.19",
   "description": "Node.js Sample Application",
