@@ -1,7 +1,7 @@
 {
   "name": "nodejs-swampup",
   "publishConfig": {
-    "registry": "http://35.188.216.43:80/artifactory/api/npm/npm-local/"
+    "registry": "http://146.148.46.222/artifactory/api/npm/npm-local/"
   },
   "version": "0.5.19",
   "description": "Node.js Sample Application",
@@ -19,12 +19,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/narasimhapai/nodejs-swampup.git"
+    "url": "https://github.com/sypherg/nodejs-swampup.git"
   },
-  "author": "Narasimha Pai <narasimhap@jfrog.com>",
+  "author": "Gian Cruz <gian_cruz@mcafee.com>",
   "license": "",
   "bugs": {
-    "url": "http://github.com/ankushchadha/nodejs-swampup/issues"
+    "url": "https://github.com/sypherg/nodejs-swampup/issues"
   },
-  "homepage": "http://github.com/narasimhapai/nodejs-swampup"
+  "homepage": "https://github.com/sypherg/nodejs-swampup"
 }
